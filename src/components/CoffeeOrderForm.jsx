@@ -1,13 +1,9 @@
 import axios from 'axios'
 import config from '../../config.js'
-import app from '../firebase.config'
-import {getAuth, signInAnonymously} from 'firebase/auth'
 import {useState, useEffect} from 'react'
 import {CountryDropdown, RegionDropdown} from 'react-country-region-selector'
 import {useForm} from 'react-hook-form'
 import {SpinnerCircular} from 'spinners-react'
-
-const auth = getAuth(app)
 
 // min and max items per order
 const minOrder = 1

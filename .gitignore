@@ -26,5 +26,4 @@ dist-ssr
 .env
 .firebase/*
 .history/*
-config.js
 .firebaserc

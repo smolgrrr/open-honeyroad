@@ -1,7 +1,5 @@
 import axios from 'axios'
 import config from '../../config.js'
-import app from '../firebase.config'
-import {getAuth, signInAnonymously} from 'firebase/auth'
 import {useState, useEffect, useReducer} from 'react'
 import {CountryDropdown, RegionDropdown} from 'react-country-region-selector'
 import {useForm} from 'react-hook-form'
@@ -12,8 +10,6 @@ import {
   addressErrors,
   addressErrorBool,
 } from '../orderFormErrors'
-
-const auth = getAuth(app)
 
 // axios base url
 const api = axios.create({
