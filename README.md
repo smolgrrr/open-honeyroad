@@ -4,7 +4,7 @@ to run on your local:
 `npm install` - one time setup  NB: react-country-region-selector may produce depency conflict with react 18 use --force
 `npm run dev`    
 
-to build:  
-`npm run build`  
-`firebase deploy`  
-note - please leave deployment to degen
+Feel free to add your product to honeyroad with a pull request, and dm @smolgrrr on twitter
+
+For payments we used the BTCPay API on the backend.
+docs.btcpayserver.org
