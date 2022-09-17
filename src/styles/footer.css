@@ -1,0 +1,27 @@
+#footer {
+  height: 18px;
+  width: 100%;
+  background: #fff;
+  padding: 5px;
+  text-align: right;
+  font-weight: normal;
+  border-top: solid #ccc 1px;
+  color: #bbb;
+  display: flex;
+  border-top: 1px solid #ccc;
+  font-weight: 400;
+
+  &.root {
+    justify-content: flex-end;
+  }
+  &.not-root {
+    justify-content: space-between;
+  }
+
+  .support {
+    margin-right: 3px;
+  }
+  .refunds {
+    margin-left: 3px;
+  }
+}

@@ -1,0 +1,34 @@
+.spinner-container {
+  align-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 35%;
+  justify-content: center;
+  left: 14%;
+  margin: 0%;
+  position: absolute;
+  top: 30%;
+  width: 75%;
+  z-index: 1;
+  display: none;
+
+  &.loading-spinner {
+    display: flex;
+    flex-wrap: nowrap;
+
+    p {
+      margin-top: 5px;
+    }
+  }
+}
+
+.loading-form {
+  opacity: 0.5;
+  pointer-events: none;
+}

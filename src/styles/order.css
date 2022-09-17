@@ -1,0 +1,115 @@
+#order-page {
+  #content {
+    display: flex;
+  }
+  .order-form-content {
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+  .form-column {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    .h2 {
+      margin-bottom: 1em;
+    }
+  }
+  .address-form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .image-column {
+    text-align: right;
+  }
+  .quant-input-container {
+    div {
+      border: 1px solid grey;
+      padding: 0 1em;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+  .details {
+    form {
+      width: 100vw;
+    }
+  }
+  .details-flex-ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .li-with-error {
+      align-items: flex-end;
+    }
+    #submit {
+      margin-bottom: 1em;
+    }
+    button {
+      border-radius: 0;
+    }
+  }
+  .prompt {
+    display: flex;
+  }
+  /* Hide Input Arrows: Chrome, Safari, Edge, Opera */
+  input {
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    /* &:placeholder-shown {
+			border: 2px solid var(--bear-red);
+			border-radius: 2px;
+		} */
+    &#quantity {
+      text-align: center;
+    }
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  .li-with-error {
+    .label-input {
+      input {
+        margin-right: 1px;
+      }
+    }
+  }
+
+  .country-state-jars {
+    label {
+      text-transform: capitalize;
+    }
+    select {
+      width: 173px;
+    }
+    input[type='number'] {
+      width: 145px;
+    }
+    button {
+      width: 12px;
+      border-radius: 3px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .form-column {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.modal {
+  font-size: 12px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  max-width: 66%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+  }
+
+  .column {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &.right {
+      padding: 20px 14px 0;
+
+      > * {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .actions {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+  .popupImage {
+    width: 100%;
+  }
+
+  .ty-button {
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  #order-id {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--light-honey);
+    padding: 10px;
+    width: 100%;
+
+    .number {
+      font-size: 36px;
+      word-break: break-all;
+    }
+  }
+}

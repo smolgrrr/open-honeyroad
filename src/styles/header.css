@@ -1,0 +1,9 @@
+#header {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(white 75%, rgb(198, 198, 198));
+
+  .hostedby {
+    margin-right: 3px;
+  }
+}
