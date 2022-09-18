@@ -27,3 +27,4 @@ dist-ssr
 .firebase/*
 .history/*
 .firebaserc
+firebase.config.js
