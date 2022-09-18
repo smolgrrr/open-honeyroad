@@ -567,6 +567,13 @@ input.btc_address {
   width: 19px;
   margin-left: 5px;
 }
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
 .info_folder {
   position: absolute;
   height: 19px;

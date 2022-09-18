@@ -9,6 +9,7 @@ import About from '../pages/About'
 import Coffee from '../pages/Coffee'
 import Honey from '../pages/Honey'
 import BAYC from '../pages/BAYC'
+import Convert from '../pages/Convert'
 
 const Layout = props => {
   const classes = useStyles()
@@ -24,6 +25,7 @@ const Layout = props => {
           <Route path="/about" element={<About />} />
           <Route path="/coffee" element={<Coffee />} />
           <Route path="/BAYC" element={<BAYC />} />
+          <Route path="/convert" element={<Convert />} />
         </Routes>
       </div>
       <Footer />

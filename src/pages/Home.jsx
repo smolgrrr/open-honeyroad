@@ -70,6 +70,9 @@ const Home = () => {
           <Product href="/BAYC" src="BAYC.png" price="100k">
             BAYC Animation
           </Product>
+          <Product href="/convert" src="swap.png">
+            Swap to <i className="fak fa-satoshisymbol-solid" />
+          </Product>
           <Product src="question.png"></Product>
         </div>
       </div>
