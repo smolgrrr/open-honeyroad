@@ -9,6 +9,7 @@ import About from '../pages/About'
 import Coffee from '../pages/Coffee'
 import Honey from '../pages/Honey'
 import BAYC from '../pages/BAYC'
+import Map from '../pages/Map'
 import Convert from '../pages/Convert'
 
 const Layout = props => {
@@ -26,6 +27,7 @@ const Layout = props => {
           <Route path="/coffee" element={<Coffee />} />
           <Route path="/BAYC" element={<BAYC />} />
           <Route path="/convert" element={<Convert />} />
+          <Route path="/map" element={<Map />} />
         </Routes>
       </div>
       <Footer />

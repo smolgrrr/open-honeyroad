@@ -9,7 +9,7 @@ const BAYC = () => {
             <span className="img_one_wrapper">
               <div className="async-image-placeholder">
                 <AsyncImage
-                  src="BAYC.png"
+                  src="BAYC.WebP"
                   className="main one responsive-image"
                 />
               </div>

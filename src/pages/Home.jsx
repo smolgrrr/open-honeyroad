@@ -67,11 +67,14 @@ const Home = () => {
           >
             El Salvador Ground Coffee– <br /> San Pacho Black Honey
           </Product>
-          <Product href="/BAYC" src="BAYC.png" price="100k">
+          <Product href="/BAYC" src="BAYC.WebP" price="100k">
             BAYC Animation
           </Product>
-          <Product href="/convert" src="swap.png">
+          <Product href="/convert" src="swap.WebP">
             Swap to <i className="fak fa-satoshisymbol-solid" />
+          </Product>
+          <Product href="/map" src="map.WebP">
+            Map of <i className="fak fa-satoshisymbol-solid" /> merchants
           </Product>
           <Product src="question.png"></Product>
         </div>
