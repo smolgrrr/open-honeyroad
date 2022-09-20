@@ -58,7 +58,7 @@ const Header = () => {
         </div>
       </header>
       <div id="main_menu_wrapper">
-        <div className="hidden-mobile" id={root ? 'main_menu_folder_listings' : 'main_menu_folder'}>
+        <div id={root ? 'main_menu_folder_listings' : 'main_menu_folder'}>
           <div id="main_menu_title">
             <span id="main_menu_title_part">Shop by</span> Category
           </div>
