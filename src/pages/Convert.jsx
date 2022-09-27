@@ -1,48 +1,48 @@
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import AsyncImage from '../components/AsyncImage'
-import { createUseStyles } from 'react-jss'
+import {createUseStyles} from 'react-jss'
 
-const useStyles = createUseStyles((theme) => ({
+const useStyles = createUseStyles(theme => ({
   fixedFloat: {
-    flexDirection: "column",
-    display: "flex",
-    width: "fit-content",
+    flexDirection: 'column',
+    display: 'flex',
+    width: 'fit-content',
 
-    "@media screen and (max-width: 768px)": {
-      margin: "0 auto",
+    '@media screen and (max-width: 768px)': {
+      margin: '0 auto',
     },
   },
   img: {
-    borderRadius: "5px",
-    overflow: "hidden",
+    borderRadius: '5px',
+    overflow: 'hidden',
   },
   titleIFrame: {
-    display: "inline-block",
-    verticalAlign: "top",
-    marginTop: "15px",
+    display: 'inline-block',
+    verticalAlign: 'top',
+    marginTop: '15px',
   },
   IFrame: {
-    minHeight: "474px",
-    width: "100%",
-    border: "none",
+    minHeight: '474px',
+    width: '100%',
+    border: 'none',
   },
 }))
 
-const Convert = (props) => {
+const Convert = props => {
   const classes = useStyles()
   return (
     <div className="fragment">
       <div id="all_but_footer">
         <div id="content">
-          <div className={classes.fixedFloat + " main-info-of-product"}>
+          <div className={classes.fixedFloat + ' main-info-of-product'}>
             <span className={classes.img}>
               <div
                 className="async-image-placeholder"
-                style={{ width: "100%", height: "28vw" }}
+                style={{width: '100%', height: '28vw'}}
               >
                 <AsyncImage
                   src="fixedfloat.jpeg"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{width: '100%', height: '100%'}}
                 />
               </div>
             </span>
@@ -66,14 +66,20 @@ const Convert = (props) => {
           >
             <div className="h3">Description</div>
             <br />
-            <a href="https://fixedfloat.com/">FixedFloat.com</a> is an instant, fully automated digital asset exchange with lightning network.
+            <a href="https://fixedfloat.com/">FixedFloat.com</a> is an instant,
+            fully automated digital asset exchange with lightning network.
             <br />
             <br />
-            <strong>HOW TO</strong><br />
-            1) Download wallet with lightning support (I recommend Muun or Wallet of Satoshi)<br />
+            <strong>HOW TO</strong>
+            <br />
+            1) Download wallet with lightning support (I recommend Muun or
+            Wallet of Satoshi)
+            <br />
             2) Generate a lightning invoice <br />
-            3) Enter your invoice into the fixed float widget above<br />
-            4) Pay with whatever token you'd like<br />
+            3) Enter your invoice into the fixed float widget above
+            <br />
+            4) Pay with whatever token you'd like
+            <br />
           </div>
           <span className="h3">Customer reviews</span>
           <br />
@@ -89,9 +95,7 @@ const Convert = (props) => {
                 </tr>
                 <tr>
                   <td style={{whiteSpace: 'nowrap'}}>5 of 5</td>
-                  <td>
-                    really simple, and easy
-                  </td>
+                  <td>really simple, and easy</td>
                   <td>smolgrrr</td>
                   <td style={{whiteSpace: 'nowrap'}}>2 days</td>
                 </tr>
@@ -103,9 +107,7 @@ const Convert = (props) => {
                 </tr>
                 <tr>
                   <td style={{whiteSpace: 'nowrap'}}>5 of 5</td>
-                  <td>
-                    Exchange in seconds. Thank you!
-                  </td>
+                  <td>Exchange in seconds. Thank you!</td>
                   <td>Neven Zec (bestchange.com)</td>
                   <td style={{whiteSpace: 'nowrap'}}>19 days</td>
                 </tr>

@@ -37,9 +37,10 @@ const OrderForm = () => {
       }
       case 'DECREMENT': {
         console.log(action)
-        if (state.quantity > 1) return {
-          quantity: state.quantity - step,
-        }
+        if (state.quantity > 1)
+          return {
+            quantity: state.quantity - step,
+          }
       }
       case 'RESET': {
         console.log(action)
@@ -47,7 +48,7 @@ const OrderForm = () => {
           quantity: 0,
         }
       }
-    default: {
+      default: {
         throw new Error(`Unsupported action type: ${type}`)
       }
     }
@@ -59,8 +60,8 @@ const OrderForm = () => {
 
   const {quantity} = _quantity
 
-  const increment = (step) => setQuantity({type: 'INCREMENT', step})
-  const decrement = (step) => setQuantity({type: 'DECREMENT', step})
+  const increment = step => setQuantity({type: 'INCREMENT', step})
+  const decrement = step => setQuantity({type: 'DECREMENT', step})
 
   const redirectToCheckout = checkoutURL => {
     window.location.href = checkoutURL
@@ -115,14 +116,14 @@ const OrderForm = () => {
 
   const Prompt = () => {
     return (
-        <div className="prompt">
+      <div className="prompt">
         <span>Alternatively, you can use PGP encryption</span>
         <div className="info_wrapper">
           <div className="info_folder">
             <div className="info_icon">?</div>
             <div className="info_message">
-              For increased privacy, please feel free to use PGP encryption
-              for your shipping information with our checkout page at
+              For increased privacy, please feel free to use PGP encryption for
+              your shipping information with our checkout page at
               fofvcafgehvc5ffnc37f2rnq6ojjp4pfpl6d6hq4i2qsbnpylu2y4sad.onion
             </div>
           </div>
@@ -131,7 +132,7 @@ const OrderForm = () => {
     )
   }
 
-  const Spinner = (loadingState) => {
+  const Spinner = loadingState => {
     // const spinnerStyles = {
     //   position: "absolute",
     //   left: "50%",
@@ -172,7 +173,6 @@ const OrderForm = () => {
     )
   }
 
-
   return (
     <>
       <Spinner loadingState={loader} />
@@ -208,7 +208,11 @@ const OrderForm = () => {
                   value={address1}
                   className={addressErrorBool('address1', errors)}
                   placeholder="1 Main Street"
-                  {...register('address1', {required: true, maxLength: 100, minLength: 3})}
+                  {...register('address1', {
+                    required: true,
+                    maxLength: 100,
+                    minLength: 3,
+                  })}
                   onChange={e => setAddress1(e.target.value)}
                 />
               </div>
@@ -224,7 +228,11 @@ const OrderForm = () => {
                   value={postalCode}
                   className={addressErrorBool('postalCode', errors)}
                   placeholder="1HN 2RD"
-                  {...register('postalCode', {required: true, maxLength: 100, minLength: 3})}
+                  {...register('postalCode', {
+                    required: true,
+                    maxLength: 100,
+                    minLength: 3,
+                  })}
                   onChange={e => setPostalCode(e.target.value)}
                 />
               </div>
@@ -240,7 +248,11 @@ const OrderForm = () => {
                   value={city}
                   className={addressErrorBool('city', errors)}
                   placeholder="Dubai"
-                  {...register('city', {required: true, maxLength: 100, minLength: 3})}
+                  {...register('city', {
+                    required: true,
+                    maxLength: 100,
+                    minLength: 3,
+                  })}
                   onChange={e => setCity(e.target.value)}
                 />
               </div>
