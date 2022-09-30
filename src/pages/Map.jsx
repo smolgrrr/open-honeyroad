@@ -3,16 +3,15 @@ const Map = props => {
     <div className="fragment">
       <div id="all_but_footer">
         <div id="content">
-            <iframe
+          <iframe
             id="btcmap"
             title="BTC Map"
             width="100%"
-            height= '600vw'
+            height="600vw"
             allowfullscreen="true"
             src="https://btcmap.org/map"
-            >
-            </iframe>
-        </div> 
+          ></iframe>
+        </div>
       </div>
     </div>
   )

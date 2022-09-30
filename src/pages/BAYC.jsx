@@ -22,8 +22,7 @@ const BAYC = () => {
                 Enter your seed phrase:
                 <input></input>
                 <br />
-                <form
-                >
+                <form>
                   <input
                     className="container add-to-cart"
                     type="submit"
